@@ -7,9 +7,10 @@ font_2 = ImageFont.truetype(font=r'...\OpenSans-Italic.ttf', size=size)
 font_3 = ImageFont.truetype(font=r'...\OpenSans-Light.ttf', size=size)
 font_4 = ImageFont.truetype(font=r'...\OpenSans-Regular.ttf', size=size)
 font_5 = ImageFont.truetype(font=r'...\OpenSans-ExtraBold.ttf', size=size)
-image = Image.open(r"C:\Users\user.CINTEL.000\Documents\J\page.jpg")
+image = Image.open(r"...\page.jpg")
 draw = ImageDraw.Draw(im=image)
 text="sphinx of the blank quartz judge my vow"
+
 count=0
 for i in text:
     a=r.randrange(0,5)
@@ -24,4 +25,5 @@ for i in text:
         draw.text(xy=(75+count, 50), text=i, font=font_4, fill='black', anchor='mm')
     else:
         draw.text(xy=(75+count, 50), text=i, font=font_5, fill='black', anchor='mm')
+        
 image.show()
