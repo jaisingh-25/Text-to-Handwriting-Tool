@@ -1,14 +1,27 @@
 from PIL import ImageFont, ImageDraw, Image
-font_1 = ImageFont.truetype(font=r'...\always forever.ttf', size=500)
-font_2 = ImageFont.truetype(font=r'...\angelina.ttf', size=500)
-font_3 = ImageFont.truetype(font=r'...\Jennifer Lynne.ttf', size=500)
-font_4 = ImageFont.truetype(font=r'...\Prestige Signature Script - Demo.ttf', size=500)
-font_5 = ImageFont.truetype(font=r'...\Sweetly Broken.ttf', size=500)
-image = Image.open(r"...\page.jpg")
+import random as r
+
+size=12
+font_1 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Bold.ttf', size=size)
+font_2 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Italic.ttf', size=size)
+font_3 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Light.ttf', size=size)
+font_4 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Regular.ttf', size=size)
+font_5 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-ExtraBold.ttf', size=size)
+image = Image.open(r"C:\Users\user.CINTEL.000\Documents\J\page.jpg")
 draw = ImageDraw.Draw(im=image)
-draw.text(xy=(5000, 1000), text="sphinx of the black quartz judge my vow", font=font_1, fill='black', anchor='mm')
-draw.text(xy=(5000, 2000), text="sphinx of the black quartz judge my vow", font=font_2, fill='black', anchor='mm')
-draw.text(xy=(5000, 3000), text="sphinx of the black quartz judge my vow", font=font_3, fill='black', anchor='mm')
-draw.text(xy=(5000, 4000), text="sphinx of the black quartz judge my vow", font=font_4, fill='black', anchor='mm')
-draw.text(xy=(5000, 5000), text="sphinx of the black quartz judge my vow", font=font_5, fill='black', anchor='mm')
+text="sphinx of the blank quartz judge my vow"
+count=0
+for i in text:
+    a=r.randrange(0,5)
+    count+=12
+    if a==0:
+        draw.text(xy=(75+count, 50), text=i, font=font_1, fill='black', anchor='mm')
+    elif a==1:
+        draw.text(xy=(75+count, 50), text=i, font=font_2, fill='black', anchor='mm')
+    elif a==2:
+        draw.text(xy=(75+count, 50), text=i, font=font_3, fill='black', anchor='mm')
+    elif a==3:
+        draw.text(xy=(75+count, 50), text=i, font=font_4, fill='black', anchor='mm')
+    else:
+        draw.text(xy=(75+count, 50), text=i, font=font_5, fill='black', anchor='mm')
 image.show()
