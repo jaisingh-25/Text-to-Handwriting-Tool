@@ -2,11 +2,11 @@ from PIL import ImageFont, ImageDraw, Image
 import random as r
 
 size=12
-font_1 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Bold.ttf', size=size)
-font_2 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Italic.ttf', size=size)
-font_3 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Light.ttf', size=size)
-font_4 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-Regular.ttf', size=size)
-font_5 = ImageFont.truetype(font=r'C:\Users\user.CINTEL.000\Documents\J\open-sans\OpenSans-ExtraBold.ttf', size=size)
+font_1 = ImageFont.truetype(font=r'...\OpenSans-Bold.ttf', size=size)
+font_2 = ImageFont.truetype(font=r'...\OpenSans-Italic.ttf', size=size)
+font_3 = ImageFont.truetype(font=r'...\OpenSans-Light.ttf', size=size)
+font_4 = ImageFont.truetype(font=r'...\OpenSans-Regular.ttf', size=size)
+font_5 = ImageFont.truetype(font=r'...\OpenSans-ExtraBold.ttf', size=size)
 image = Image.open(r"C:\Users\user.CINTEL.000\Documents\J\page.jpg")
 draw = ImageDraw.Draw(im=image)
 text="sphinx of the blank quartz judge my vow"
