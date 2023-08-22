@@ -5,4 +5,6 @@ I will be using the pillow library to load my custom fonts(which I'll create) an
 Update 2.0  
 Successfully managed to draw 5 types of different text onto an image of a blank sheet.
 Update 3.0  
-Successfully managed to draw 5 types of different text randomly on the same line of paper.
+Successfully managed to draw 5 types of different text randomly on the same line of paper.  
+Update 4.0  
+Font files chosen for the project.
