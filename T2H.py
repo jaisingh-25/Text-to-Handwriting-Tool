@@ -1,6 +1,5 @@
 from PIL import ImageFont, ImageDraw, Image
 import random as r
-
 size=12
 font_1 = ImageFont.truetype(font=r'...\OpenSans-Bold.ttf', size=size)
 font_2 = ImageFont.truetype(font=r'...\OpenSans-Italic.ttf', size=size)
