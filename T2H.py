@@ -23,5 +23,4 @@ for i in text:
         draw.text(xy=(75+count, 50), text=i, font=font_4, fill='black', anchor='mm')
     else:
         draw.text(xy=(75+count, 50), text=i, font=font_5, fill='black', anchor='mm')
-        
 image.show()
