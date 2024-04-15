@@ -9,7 +9,6 @@ font_5 = ImageFont.truetype(font=r'...\OpenSans-ExtraBold.ttf', size=size)
 image = Image.open(r"...\page.jpg")
 draw = ImageDraw.Draw(im=image)
 text="sphinx of the blank quartz judge my vow"
-
 count=0
 for i in text:
     a=r.randrange(0,5)
