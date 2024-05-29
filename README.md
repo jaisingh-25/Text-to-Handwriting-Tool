@@ -1,5 +1,5 @@
 # Text-to-Handwriting-Tool
-A text to handwriting tool developed to help students. This is currently a work-in-progress.  
+A text to handwriting tool developed to help students. This is currently a workinprogress.  
 Update 1.0  
 I will be using the pillow library to load my custom fonts(which I'll create) and print that on a picture of a blank A4 size paper(to generate realistic effect).  
 Update 2.0  
